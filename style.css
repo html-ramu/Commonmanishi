@@ -131,13 +131,26 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
 }
-.logo-area {
+.header-left {
     display: flex;
-    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+.header-center {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+}
+.header-right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
 }
 
-/* Brand Logo Styling */
+/* Brand Logo */
 .brand-logo {
     height: 45px;
     width: auto;
@@ -145,12 +158,27 @@ a {
     display: block;
 }
 
+/* Brand Title */
+.header-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--primary); /* Dark Navy */
+    line-height: 1;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     .brand-logo {
         height: 55px;
     }
+    .header-title {
+        font-size: 1.8rem;
+    }
 }
 
+/* Search Icon */
 .search-btn {
     color: var(--text-main);
     background: none;
