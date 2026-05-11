@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Commonmanishi</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <h2>CM Admin</h2>
+            <nav>
+                <a href="#" class="active">Add News</a>
+                <a href="#">Manage News</a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <header>
+                <h1>Add New Article</h1>
+            </header>
+            
+            <form id="add-news-form" class="news-form">
+                <div class="form-group">
+                    <label>Title (Telugu)</label>
+                    <input type="text" id="n-title" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select id="n-category" required>
+                            <option value="లేటెస్ట్">లేటెస్ట్</option>
+                            <option value="జాతీయం">జాతీయం</option>
+                            <option value="అంతర్జాతీయం">అంతర్జాతీయం</option>
+                            <option value="రాజకీయాలు">రాజకీయాలు</option>
+                            <option value="ఆరోగ్యం">ఆరోగ్యం</option>
+                            <option value="ఆటలు">ఆటలు</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" id="n-location" placeholder="e.g. హైదరాబాద్">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Thumbnail Image</label>
+                    <input type="file" id="n-image" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Short Description</label>
+                    <textarea id="n-short" rows="2" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Full News Content</label>
+                    <textarea id="n-full" rows="8" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="n-breaking">
+                    <label for="n-breaking">Mark as Breaking News</label>
+                </div>
+
+                <button type="submit" id="publish-btn" class="publish-btn">Publish News</button>
+                <p id="upload-status"></p>
+            </form>
+        </main>
+    </div>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

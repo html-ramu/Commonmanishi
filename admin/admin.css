@@ -1,0 +1,214 @@
+:root {
+    --primary: #0F172A;
+    --secondary: #1E293B;
+    --accent: #2563EB;
+    --bg-color: #F8FAFC;
+    --text-main: #111827;
+    --white: #FFFFFF;
+    --border: #E2E8F0;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Noto Sans Telugu', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+/* --- LOGIN PAGE --- */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary);
+}
+.login-container {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.login-container button:hover {
+    background-color: #1D4ED8;
+}
+
+/* --- ADMIN DASHBOARD --- */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h2 {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--secondary);
+    text-align: center;
+}
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.sidebar nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: var(--transition);
+    font-weight: 500;
+}
+.sidebar nav a:hover, .sidebar nav a.active {
+    background-color: var(--secondary);
+    color: var(--white);
+    border-left: 4px solid var(--accent);
+}
+#logout-btn {
+    margin-top: auto;
+    color: #ef4444;
+}
+
+/* Main Content */
+.admin-main {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+.admin-main header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Forms */
+.news-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    max-width: 800px;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+.form-row .form-group {
+    flex: 1;
+}
+label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+input[type="text"], 
+input[type="file"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+}
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.checkbox-group input {
+    width: auto;
+    cursor: pointer;
+}
+.checkbox-group label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.publish-btn {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+    margin-top: 1rem;
+}
+.publish-btn:hover {
+    background-color: #1D4ED8;
+}
+.publish-btn:disabled {
+    background-color: #93C5FD;
+    cursor: not-allowed;
+}
+#upload-status {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
