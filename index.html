@@ -20,52 +20,68 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- Header Section -->
-    <header class="top-header">
-        <div class="container header-content">
-            <div class="logo-area">
-                <!-- SVG Logo Placeholder -->
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                <h1 class="brand-name">Commonmanishi</h1>
+    <!-- TOP BAR 1 (Slim & Dark) -->
+    <div class="top-bar-slim">
+        <div class="container slim-content">
+            <div class="slim-left">
+                <span class="news-emoji">🗞️</span>
+                <span class="slim-brand">Common manishi</span>
             </div>
-            
-            <div class="header-actions">
-                <a href="#" class="social-icon" aria-label="Instagram">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <div class="slim-right social-icons-colorful">
+                <a href="#" class="brand-icon insta" aria-label="Instagram">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
-                <a href="#" class="social-icon" aria-label="Facebook">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <a href="#" class="brand-icon fb" aria-label="Facebook">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                 </a>
-                <a href="#" class="social-icon" aria-label="YouTube">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                <a href="#" class="brand-icon yt" aria-label="YouTube">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
                 </a>
-                <a href="#" class="social-icon" aria-label="WhatsApp">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <a href="#" class="brand-icon wa" aria-label="WhatsApp">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 </a>
-                <button id="search-toggle" class="social-icon search-btn" aria-label="Search">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                </button>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="main-nav" id="navbar">
-        <ul class="nav-list container">
-            <li class="nav-item active" data-category="home">🏠 Home</li>
-            <li class="nav-item" data-category="లేటెస్ట్">లేటెస్ట్</li>
-            <li class="nav-item" data-category="జాతీయం">జాతీయం</li>
-            <li class="nav-item" data-category="అంతర్జాతీయం">అంతర్జాతీయం</li>
-            <li class="nav-item" data-category="రాజకీయాలు">రాజకీయాలు</li>
-            <li class="nav-item" data-category="ఆరోగ్యం">ఆరోగ్యం</li>
-            <li class="nav-item" data-category="ఆటలు">ఆటలు</li>
-            <li class="nav-item" data-category="వాతావరణం">వాతావరణం</li>
-        </ul>
-    </nav>
+    <!-- STICKY WRAPPER: Top Bar 2 + Navigation + Search -->
+    <div class="sticky-header-wrapper">
+        
+        <!-- TOP BAR 2 (Main Header) -->
+        <header class="main-header">
+            <div class="container header-content">
+                <div class="logo-area">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                    <h1 class="brand-name">Commonmanishi</h1>
+                </div>
+                
+                <div class="header-actions">
+                    <button id="search-toggle" class="search-btn" aria-label="Search">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </header>
 
-    <!-- Search Bar (Hidden by default) -->
-    <div id="search-container" class="search-container container hidden">
-        <input type="text" id="search-input" placeholder="వార్తలను వెతకండి...">
+        <!-- Navigation Bar -->
+        <nav class="main-nav" id="navbar">
+            <ul class="nav-list container">
+                <li class="nav-item active" data-category="home">Home</li>
+                <li class="nav-item" data-category="లేటెస్ట్">లేటెస్ట్</li>
+                <li class="nav-item" data-category="జాతీయం">జాతీయం</li>
+                <li class="nav-item" data-category="అంతర్జాతీయం">అంతర్జాతీయం</li>
+                <li class="nav-item" data-category="రాజకీయాలు">రాజకీయాలు</li>
+                <li class="nav-item" data-category="ఆరోగ్యం">ఆరోగ్యం</li>
+                <li class="nav-item" data-category="ఆటలు">ఆటలు</li>
+                <li class="nav-item" data-category="వాతావరణం">వాతావరణం</li>
+            </ul>
+        </nav>
+
+        <!-- Search Bar (Hidden by default) -->
+        <div id="search-container" class="search-container container hidden">
+            <input type="text" id="search-input" placeholder="వార్తలను వెతకండి...">
+        </div>
+        
     </div>
 
     <!-- Main Content -->
@@ -93,7 +109,8 @@
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container footer-content">
-            <p>Copyright &copy; 2026 Commonmanishi.in. All rights reserved.</p>
+            <p>Copyright &copy; Commonmanishi.in</p>
+            <p>All rights reserved</p>
             <p class="developer-tag">Designed & Developed by <a href="https://github.com/html-ramu" target="_blank">html-ramu</a></p>
         </div>
     </footer>

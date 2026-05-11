@@ -8,6 +8,12 @@
     --white: #FFFFFF;
     --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --transition: all 0.3s ease;
+    
+    /* Social Brand Colors */
+    --c-insta: #E1306C;
+    --c-fb: #1877F2;
+    --c-yt: #FF0000;
+    --c-wa: #25D366;
 }
 
 * {
@@ -55,10 +61,70 @@ a {
 }
 @keyframes spin { 100% { transform: rotate(360deg); } }
 
-/* Header */
-.top-header {
+
+/* =========================================================
+   1. TOP BAR 1 (Slim & Dark)
+========================================================= */
+.top-bar-slim {
     background-color: var(--primary);
     color: var(--white);
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+}
+.slim-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slim-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.slim-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.brand-icon {
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+.brand-icon:hover {
+    transform: scale(1.15);
+}
+/* Colorful Brand Overrides */
+.brand-icon.insta { color: var(--c-insta); }
+.brand-icon.fb { color: var(--c-fb); }
+.brand-icon.yt { color: var(--c-yt); }
+.brand-icon.wa { color: var(--c-wa); }
+
+@media (max-width: 480px) {
+    .slim-content {
+        font-size: 0.8rem;
+    }
+    .slim-right {
+        gap: 0.75rem;
+    }
+}
+
+
+/* =========================================================
+   2. STICKY WRAPPER (Header + Nav)
+========================================================= */
+.sticky-header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+    box-shadow: var(--card-shadow);
+}
+
+/* Main Header */
+.main-header {
     padding: 1rem 0;
 }
 .header-content {
@@ -75,34 +141,25 @@ a {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
+    color: var(--primary);
     letter-spacing: -0.5px;
 }
-.header-actions {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-.social-icon {
-    color: var(--white);
-    transition: var(--transition);
-    cursor: pointer;
+.search-btn {
+    color: var(--text-main);
     background: none;
     border: none;
+    cursor: pointer;
     display: flex;
+    align-items: center;
+    transition: var(--transition);
 }
-.social-icon:hover {
+.search-btn:hover {
     color: var(--accent);
-    transform: translateY(-2px);
 }
 
 /* Navigation */
 .main-nav {
-    background: var(--white);
-    box-shadow: var(--card-shadow);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #E2E8F0;
+    border-top: 1px solid #F1F5F9;
 }
 .nav-list {
     display: flex;
@@ -142,8 +199,9 @@ a {
 
 /* Search Container */
 .search-container {
-    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     transition: var(--transition);
+    background: var(--white);
 }
 .search-container.hidden {
     display: none;
@@ -161,7 +219,10 @@ a {
     border-color: var(--accent);
 }
 
-/* Main Content */
+
+/* =========================================================
+   3. MAIN CONTENT
+========================================================= */
 .main-content {
     padding: 2rem 1rem;
     min-height: 70vh;
@@ -304,24 +365,35 @@ a {
     color: var(--accent);
 }
 
-/* Footer */
+/* =========================================================
+   4. FOOTER 
+========================================================= */
 .main-footer {
     background: var(--primary);
     color: var(--white);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     margin-top: auto;
 }
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 .footer-content p {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #cbd5e1;
+}
+.developer-tag {
+    margin-top: 0.5rem;
 }
 .developer-tag a {
     color: var(--accent);
     font-weight: 600;
+    transition: var(--transition);
 }
 .developer-tag a:hover {
+    color: #60A5FA;
     text-decoration: underline;
 }
 
