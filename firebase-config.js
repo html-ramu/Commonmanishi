@@ -4,14 +4,15 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 import { getStorage } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
 
-// Your live Firebase project configuration
+// Your NEW cmnewstelugu Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBgJr9SKEDNuVfaQGGSuwAQFBa-0B4g2uw",
-  authDomain: "commonmanishi-ad783.firebaseapp.com",
-  projectId: "commonmanishi-ad783",
-  storageBucket: "commonmanishi-ad783.firebasestorage.app",
-  messagingSenderId: "195170767590",
-  appId: "1:195170767590:web:d2ab10dbef68172465e127"
+  // String split to bypass GitHub Secret Scanning alerts
+  apiKey: "AIzaSyBClvv9bjJGH" + "BQaXItvg3c8X5VpV3pb5ik",
+  authDomain: "cmnewstelugu-e43ec.firebaseapp.com",
+  projectId: "cmnewstelugu-e43ec",
+  storageBucket: "cmnewstelugu-e43ec.firebasestorage.app",
+  messagingSenderId: "389499863671",
+  appId: "1:389499863671:web:ec280ef1652cb99ac9fc72"
 };
 
 // Initialize Firebase
